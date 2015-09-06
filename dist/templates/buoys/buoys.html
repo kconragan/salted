@@ -1,0 +1,5 @@
+<div data-ng-repeat="buoy in buoys">
+  <h2 class="title">{{ buoy.id }}</h2>
+  <h3>{{ buoy.swellHeight }}ft. @ {{buoy.swellPeriod}}sec</h3>
+  <h4>{{ buoy.swellDegrees }}&deg; {{ buoy.swellDirection }} &middot; {{ buoy.relativeTimestamp }} &middot; {{ buoy.waterTemp }} F&deg;</h4>
+</div>
