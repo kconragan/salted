@@ -6,6 +6,7 @@ angular.module('buoys')
 
   var buoys = [46012, 46237, 46026];
 
+  $scope.loading = true;
   $scope.buoys = [];
 
   _.each(buoys, function(element, index) {
@@ -13,6 +14,7 @@ angular.module('buoys')
     buoy.then(function(data) {
       console.log(data);
       $scope.buoys.push(data);
+      $scope.loading = false;
     },
 
     function(error) {
