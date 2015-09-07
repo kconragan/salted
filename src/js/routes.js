@@ -3,8 +3,8 @@ angular.module('app')
   $urlRouterProvider.otherwise('/buoys');
   $stateProvider
     .state('buoys', {
-        url: '/buoys',
-        controller : 'BuoyCtrl',
-        templateUrl: 'templates/buoys/buoys.html'
+      url: '/buoys',
+      controller: 'BuoyCtrl',
+      templateUrl: 'templates/buoys/buoys.html'
     })
 })

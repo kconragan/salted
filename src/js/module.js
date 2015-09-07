@@ -1,4 +1,6 @@
 angular.module('app', [
   'ui.router',
-  'buoys'
-])
+  'ngTouch',
+  'buoys',
+  'tabs'
+]);
